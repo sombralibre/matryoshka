@@ -1,0 +1,9 @@
+export containerd_pkg_url=https://github.com/containerd/containerd/releases/download
+export containerd_pkg_version=1.6.4
+export containerd_pkg_name=containerd-$containerd_pkg_version-linux-amd64.tar.gz
+export containerd_pkg_source=$containerd_pkg_url/v$containerd_pkg_version/$containerd_pkg_name
+
+export dockerd_pkg_url=https://download.docker.com/linux/static/stable/x86_64
+export dockerd_pkg_version=20.10.15
+export dockerd_pkg_name=docker-$dockerd_pkg_version.tgz
+export dockerd_pkg_source=$dockerd_pkg_url/$dockerd_pkg_name

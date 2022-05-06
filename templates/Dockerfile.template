@@ -1,0 +1,15 @@
+FROM ubuntu
+
+RUN apt update && \
+apt install supervisor iptables ca-certificates curl -y
+
+RUN curl -LO $containerd_pkg_source
+RUN curl -LO $dockerd_pkg_source
+
+RUN tar xzvf $containerd_pkg_name -C /usr/
+RUN tar xzvf $dockerd_pkg_name
+RUN cp docker/* /usr/bin
+
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+CMD ["/usr/bin/supervisord"]
