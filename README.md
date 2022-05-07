@@ -15,7 +15,7 @@ This shit works without binding host socket `/var/run/docker.sock` or host direc
 
 ### Build
 
-You can build your own image o just pull it from [Docker Hub](https://hub.docker.com/repository/docker/sombralibre/matryoshka)
+You can build your own image o just pull it from [Docker Hub](https://hub.docker.com/r/sombralibre/matryoshka)
 
 Generate new dockerfile from template, this will create a new `Dockerfile` in the current directory.
 
@@ -51,10 +51,12 @@ Enter into the second one and run a matryoshka-03, matryoshka-04 and so on, for 
 
 ## Challenge
 
-Drop me a PR replacing the current image with the maximum level of  deep .
+Drop me a PR replacing the current image with the maximum level of depth.
 
 # Current Winner
 
-[@sombralibre](https://github.com/sombralibre)
+**User:** [@sombralibre](https://github.com/sombralibre) 
+
+**Inception:**  3
 
 ![Winner](/images/inception.png)
